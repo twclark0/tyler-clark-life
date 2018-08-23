@@ -1,13 +1,3 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import Home from '../templates/Home'
 
-const IndexPage = () => (
-  <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/experiance/">Go to page 2</Link>
-  </div>
-)
-
-export default IndexPage
+export default Home
