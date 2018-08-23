@@ -24,23 +24,31 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
-.bubble--experiance {
-  height: 125px;
-  width: 125px;
-  background: #0B3C5D;
-}
-.bubble--talks {
-  height: 75px;
-  width: 75px;
-  background: #D9B310;
-}
-.bubble--resume {
-  height: 100px;
-  width: 100px;
-  background: #f4c3a2;
-}
-.bubble-p {
+.bubble--p {
   margin: 0;
+  transition: font-size .6s ease-in-out;
+  color: #fff;
+}
+.bubblesContainer i {
+  transition: font-size .6s ease-in-out;
+}
+.bubble--experiance .bubble--p {
+  font-size: 16px !important;
+}
+.bubble--talks .bubble--p {
+  font-size: 16px !important;
+}
+.bubble--resume .bubble--p {
+  font-size: 16px !important;
+}
+.bubble--twitter i {
+  font-size: 20px !important;
+}
+.bubble--linkedIn i {
+  font-size: 20px !important;
+}
+.bubble--youtube i {
+  font-size: 20px !important;
 }
 .bubble {
   border-radius: 50%;
@@ -50,17 +58,44 @@ body {
   justify-content: center;
   color: #fff;
   position: absolute;
-  transition: 1s;
+  transition: width .6s, height .6s, transform 1s ease-in-out;
+  margin: 0;
+}
+.bubble--talks {
+  height: 75px !important;
+  width: 75px !important;
+  background: #D9B310;
+  transform: translate(-100px, 5px);
 }
 .bubble--twitter {
-  height: 50px;
-  width: 50px;
+  height: 50px !important;
+  width: 50px !important;
   background: #48AAE6;
+  transform: translate(100px, 0px);
 }
 .bubble--youtube {
   background: #e8590c;
-  height: 50px;
-  width: 50px;
+  height: 50px !important;
+  width: 50px !important;
+  transform: translate(-100px, 95px);
+}
+.bubble--linkedIn {
+  height: 50px !important;
+  width: 50px !important;
+  background: #0077B5;
+  transform: translate(-40px, 150px);
+}
+.bubble--resume {
+  height: 100px !important;
+  width: 100px !important;
+  background: #f4c3a2;
+  transform: translate(90px,120px);
+}
+.bubble--experiance {
+  height: 125px !important;
+  width: 125px !important;
+  background: #0B3C5D;
+  transform: translate(0px, 25px);
 }
 .contentContainer {
   width: 100%;
@@ -68,19 +103,17 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.bubble--linkedIn {
-  height: 50px;
-  width: 50px;
-  background: #0077B5;
-}
+
 .bubblesContainer {
   position: relative;
   display: flex;
   justify-content: center;
   height: 300px;
-  width: 100%;
+  width: 500px;
 }
+
 .hide {
   width: 0;
   height: 0;
+  top: 0;
 }

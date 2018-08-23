@@ -4,17 +4,22 @@ import 'regenerator-runtime/runtime'
 
 export default class Home extends React.Component {
   state = {
+    experiance: 'hidden',
     twitter: 'hidden',
     linkedIn: 'hidden',
     resume: 'hidden',
-    experiance: 'hidden',
-    talks: 'hidden'
+    talks: 'hidden',
+    youtube: 'hidden'
   }
 
   composeClasses(name) {
-    return `${css[`bubble--${name}`]} ${css.bubble} ${
-      this.state[name] === 'hidden' ? css.hide : ''
+    return `${css.bubble} ${
+      this.state[name] === 'hidden' ? css.hide : css[`bubble--${name}`]
     }`
+  }
+
+  composeFontSize(name) {
+    return `${this.state[name] ? css['bubble--p'] : ''}`
   }
 
   componentDidMount() {
@@ -53,22 +58,22 @@ export default class Home extends React.Component {
           </div>
           <div className={css.bubblesContainer}>
             <div className={this.composeClasses('experiance')}>
-              <p className={css['bubble-p']}>experiance</p>
+              <p style={{fontSize: '0px'}} className={this.composeFontSize('experiance')}>experiance</p>
             </div>
-            <div className={this.composeClasses('youTube')}>
-              <i style={{ fontSize: '20px' }} className="fab fa-youtube" />
+            <div className={this.composeClasses('youtube')}>
+              <i style={{ fontSize: '0px' }} className='fab fa-youtube' />
             </div>
             <div className={this.composeClasses('talks')}>
-              <p className={css['bubble-p']}>talks</p>
+              <p style={{fontSize: '0px'}} className={this.composeFontSize('talks')}>talks</p>
             </div>
             <div className={this.composeClasses('linkedIn')}>
-              <i style={{ fontSize: '20px' }} className="fab fa-linkedin-in" />
+              <i style={{ fontSize: '0px' }} className="fab fa-linkedin-in" />
             </div>
             <div className={this.composeClasses('resume')}>
-              <p className={css['bubble-p']}>resume</p>
+              <p style={{fontSize: '0px'}} className={this.composeFontSize('resume')}>resume</p>
             </div>
             <div className={this.composeClasses('twitter')}>
-              <i style={{ fontSize: '20px' }} className="fab fa-twitter" />
+              <i style={{ fontSize: '0px' }} className="fab fa-twitter" />
             </div>
           </div>
         </div>
