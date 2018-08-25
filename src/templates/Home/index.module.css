@@ -13,9 +13,13 @@ body {
   font-weight: bold;
   margin: 0;
   letter-spacing: 1px;
+  will-change: transform;
+  transition: transform 0.1s linear;
 }
 .profile h3 {
   margin: 0;
+  will-change: transform;
+  transition: transform 0.2s linear;
 }
 .container {
   height: 100vh;
@@ -26,11 +30,11 @@ body {
 }
 .bubble--p {
   margin: 0;
-  transition: font-size .6s ease-in-out;
+  transition: font-size 0.6s ease-in-out;
   color: #fff;
 }
 .bubblesContainer i {
-  transition: font-size .6s ease-in-out;
+  transition: font-size 0.6s ease-in-out;
 }
 .bubble--experiance .bubble--p {
   font-size: 16px !important;
@@ -58,47 +62,47 @@ body {
   justify-content: center;
   color: #fff;
   position: absolute;
-  transition: width .6s, height .6s, transform 1s ease-in-out;
+  transition: width 0.6s, height 0.6s, transform 1s ease-in-out;
   margin: 0;
 }
 .bubble--talks {
-  height: 75px !important;
-  width: 75px !important;
-  background: #D9B310;
-  transform: translate(-100px, 5px);
+  height: 80px !important;
+  width: 80px !important;
+  background: #d9b310;
+  transform: translate(-120px, -45px);
 }
 .bubble--twitter {
-  height: 50px !important;
-  width: 50px !important;
-  background: #48AAE6;
+  height: 60px !important;
+  width: 60px !important;
+  background: #48aae6;
   transform: translate(100px, 0px);
 }
 .bubble--youtube {
   background: #e8590c;
-  height: 50px !important;
-  width: 50px !important;
-  transform: translate(-100px, 95px);
+  height: 60px !important;
+  width: 60px !important;
+  transform: translate(-85px, 60px);
 }
 .bubble--linkedIn {
-  height: 50px !important;
-  width: 50px !important;
-  background: #0077B5;
-  transform: translate(-40px, 150px);
+  height: 60px !important;
+  width: 60px !important;
+  background: #0077b5;
+  transform: translate(-40px, 110px);
 }
 .bubble--resume {
   height: 100px !important;
   width: 100px !important;
   background: #f4c3a2;
-  transform: translate(90px,120px);
+  transform: translate(70px, 110px);
 }
 .bubble--experiance {
   height: 125px !important;
   width: 125px !important;
-  background: #0B3C5D;
-  transform: translate(0px, 25px);
+  background: #0b3c5d;
+  transform: translate(0px, -10px);
 }
 .contentContainer {
-  width: 100%;
+  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -108,8 +112,9 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
-  height: 300px;
+  height: 200px;
   width: 500px;
+  align-items: center;
 }
 
 .hide {
