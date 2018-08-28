@@ -6,7 +6,7 @@ body {
   margin: 0;
 }
 .profile {
-  text-align: right;
+  text-align: left;
 }
 .profile h1 {
   font-size: 48px;
@@ -20,22 +20,32 @@ body {
   margin: 0;
   will-change: transform;
   transition: transform 0.2s linear;
+  padding: 0 0 0 9px;
 }
-.container {
-  height: 100vh;
-  position: relative;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+.profileImg {
+  position: absolute;
+  height: 90%;
+  left: 0;
+  bottom: -10px;
+  transition: transform 0.2s linear;
+  will-change: transform;
+}
+.imgContainer {
+  opacity: 0.9;
+  position: absolute;
+  background: #5d0b3c;
+  border-radius: 50%;
+  height: 200vh;
+  width: 50%;
+  z-index: -1;
+  left: -11%;
 }
 .bubble--p {
   margin: 0;
   transition: font-size 0.6s ease-in-out;
   color: #fff;
 }
-.bubblesContainer i {
-  transition: font-size 0.6s ease-in-out;
-}
+
 .bubble--experiance .bubble--p {
   font-size: 16px !important;
 }
@@ -106,6 +116,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 90%;
 }
 
 .bubblesContainer {

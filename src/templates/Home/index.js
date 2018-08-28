@@ -1,6 +1,9 @@
 import React from 'react'
+import FollowMouse from './components/FollowMouse'
 import css from './index.module.css'
 import 'regenerator-runtime/runtime'
+import tyler from './tyler-BW.png'
+import Section from './components/Section'
 
 export default class Home extends React.Component {
   state = {
@@ -11,9 +14,7 @@ export default class Home extends React.Component {
       resume: 'hidden',
       talks: 'hidden',
       youtube: 'hidden'
-    },
-    mouse: { x: 0, y: 0 },
-    mouseMove: false
+    }
   }
 
   composeClasses(name) {
@@ -56,30 +57,23 @@ export default class Home extends React.Component {
     setInterval(showInterval, 200)
   }
 
-  translateMouse = e => {
-    const {
-      left,
-      top,
-      width,
-      height
-    } = this.containerRef.getBoundingClientRect()
-    const x = (e.clientX - (left + width / 2)) * 0.007
-    const y = (e.clientY - (top + height / 2)) * 0.007
-    this.setState({ mouse: { x, y }, mouseMove: true })
-  }
-
   render() {
-    const translation = {
-      transform: `translate(${this.state.mouse.x}px, ${this.state.mouse.y}px)`
-    }
     return (
-      <section className={css.container} onMouseMove={this.translateMouse}>
+      <Section>
+        <div className={css.imgContainer} />
+        <FollowMouse>
+          <img className={css.profileImg} src={tyler} />
+        </FollowMouse>
         <div
           className={css.contentContainer}
           ref={el => (this.containerRef = el)}>
           <div className={css.profile}>
-            <h1 style={{ ...translation }}>Tyler Clark</h1>
-            <h3 style={{ ...translation }}>Fullstack Developer</h3>
+            <FollowMouse>
+              <h1>Tyler Clark</h1>
+            </FollowMouse>
+            <FollowMouse>
+              <h3>Fullstack Developer</h3>
+            </FollowMouse>
           </div>
           <div className={css.bubblesContainer}>
             <div className={this.composeClasses('experiance')}>
@@ -114,7 +108,7 @@ export default class Home extends React.Component {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
     )
   }
 }
