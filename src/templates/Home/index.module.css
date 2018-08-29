@@ -19,7 +19,7 @@ body {
 .profile h3 {
   margin: 0;
   will-change: transform;
-  transition: transform 0.2s linear;
+  transition: transform 0.1s linear;
   padding: 0 0 0 9px;
 }
 .profileImg {
@@ -57,12 +57,15 @@ body {
 }
 .bubble--twitter i {
   font-size: 20px !important;
+  transition: font-size 1s;
 }
 .bubble--linkedIn i {
   font-size: 20px !important;
+  transition: font-size 1s;
 }
 .bubble--youtube i {
   font-size: 20px !important;
+  transition: font-size 1s;
 }
 .bubble {
   border-radius: 50%;
@@ -79,37 +82,37 @@ body {
   height: 80px !important;
   width: 80px !important;
   background: #d9b310;
-  transform: translate(-120px, -45px);
+  transform: translate(-127.3px, -37.8px);
 }
 .bubble--twitter {
   height: 60px !important;
   width: 60px !important;
   background: #48aae6;
-  transform: translate(100px, 0px);
+  transform: translate(90.7px, -3.12px);
 }
 .bubble--youtube {
   background: #e8590c;
   height: 60px !important;
   width: 60px !important;
-  transform: translate(-85px, 60px);
+  transform: translate(-92.7px, 56.5px);
 }
 .bubble--linkedIn {
   height: 60px !important;
   width: 60px !important;
   background: #0077b5;
-  transform: translate(-40px, 110px);
+  transform: translate(-58px, 116px);
 }
 .bubble--resume {
   height: 100px !important;
   width: 100px !important;
   background: #f4c3a2;
-  transform: translate(70px, 110px);
+  transform: translate(61px, 106px);
 }
 .bubble--experiance {
   height: 125px !important;
   width: 125px !important;
   background: #0b3c5d;
-  transform: translate(0px, -10px);
+  transform: translate(-8.3px, -13px);
 }
 .contentContainer {
   width: 400px;
