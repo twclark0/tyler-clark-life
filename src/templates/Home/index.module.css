@@ -27,7 +27,7 @@ body {
   height: 90%;
   left: 0;
   bottom: -10px;
-  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, filter 0.8s;
   will-change: transform;
 }
 .imgContainer {

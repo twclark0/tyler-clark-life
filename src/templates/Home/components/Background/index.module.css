@@ -1,0 +1,15 @@
+.backgroundContainer {
+  position: absolute;
+  left: 200px;
+  z-index: 1;
+  bottom: 0;
+}
+.lg {
+  border-left: 100px solid hsla(0, 0%, 0%, 0);
+  border-right: 100px solid hsla(0, 0%, 0%, 0);
+  border-bottom: 900px solid hsl(0, 0%, 0%);
+  position: absolute;
+  height: 900px;
+  width: 200px;
+  bottom: 0;
+}
