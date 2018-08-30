@@ -126,22 +126,28 @@ export default class Home extends React.Component {
               transY={this.state.bubbles.talks === 'hidden' ? 0 : -35}
               inline={this.composeTransition()}
               sensitivity={0.006}>
-              <div className={this.composeClasses('talks')}>
+              <a
+                href="https://egghead.io/instructors/tyler-clark"
+                className={this.composeClasses('talks')}
+                target="_blank">
                 <p
                   style={{ fontSize: '0px' }}
                   className={this.composeFontSize('talks')}>
-                  Talks
+                  Courses
                 </p>
-              </div>
+              </a>
             </FollowMouse>
             <FollowMouse
               transX={this.state.bubbles.linkedIn === 'hidden' ? 0 : -50}
               transY={this.state.bubbles.linkedIn === 'hidden' ? 0 : 120}
               inline={this.composeTransition()}
               sensitivity={0.01}>
-              <div className={this.composeClasses('linkedIn')}>
+              <a
+                href="https://www.linkedin.com/in/tyler-clark-80003569/"
+                target="_blank"
+                className={this.composeClasses('linkedIn')}>
                 <i style={{ fontSize: '0px' }} className="fab fa-linkedin-in" />
-              </div>
+              </a>
             </FollowMouse>
             <FollowMouse
               transX={this.state.bubbles.resume === 'hidden' ? 0 : 70}
@@ -161,9 +167,12 @@ export default class Home extends React.Component {
               transY={this.state.bubbles.twitter === 'hidden' ? 0 : 0}
               inline={this.composeTransition()}
               sensitivity={0.011}>
-              <div className={this.composeClasses('twitter')}>
+              <a
+                href="https://twitter.com/iamtylerwclark"
+                target="_blank"
+                className={this.composeClasses('twitter')}>
                 <i style={{ fontSize: '0px' }} className="fab fa-twitter" />
-              </div>
+              </a>
             </FollowMouse>
           </div>
         </div>

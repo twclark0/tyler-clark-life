@@ -83,36 +83,48 @@ body {
   width: 80px !important;
   background: #d9b310;
   transform: translate(-127.3px, -37.8px);
+  cursor: pointer;
+  text-decoration: none;
 }
 .bubble--twitter {
   height: 60px !important;
   width: 60px !important;
   background: #48aae6;
   transform: translate(90.7px, -3.12px);
+  cursor: pointer;
+  text-decoration: none;
 }
 .bubble--youtube {
   background: #e8590c;
   height: 60px !important;
   width: 60px !important;
   transform: translate(-92.7px, 56.5px);
+  cursor: pointer;
+  text-decoration: none;
 }
 .bubble--linkedIn {
   height: 60px !important;
   width: 60px !important;
   background: #0077b5;
   transform: translate(-58px, 116px);
+  cursor: pointer;
+  text-decoration: none;
 }
 .bubble--resume {
   height: 100px !important;
   width: 100px !important;
   background: #f4c3a2;
   transform: translate(61px, 106px);
+  cursor: pointer;
+  text-decoration: none;
 }
 .bubble--experiance {
   height: 125px !important;
   width: 125px !important;
   background: #0b3c5d;
   transform: translate(-8.3px, -13px);
+  cursor: pointer;
+  text-decoration: none;
 }
 .contentContainer {
   width: 400px;
