@@ -44,7 +44,6 @@ module.exports = class HTML extends React.Component {
                 bottom: 0;
                 left: 0;
                 right: 0;
-                z-index: -1;
               }
               `}
           </style>
@@ -56,7 +55,6 @@ module.exports = class HTML extends React.Component {
             id="___gatsby"
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
-          <canvas className="background" />
           <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js" />
           {this.props.postBodyComponents}
         </body>

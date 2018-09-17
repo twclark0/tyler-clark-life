@@ -2,9 +2,7 @@ import React from 'react'
 import FollowMouse from './components/FollowMouse'
 import css from './index.module.css'
 import 'regenerator-runtime/runtime'
-import tyler from './tyler-BW.png'
 import Section from './components/Section'
-import Background from './components/Background'
 
 export default class Home extends React.Component {
   state = {
@@ -40,7 +38,10 @@ export default class Home extends React.Component {
   componentDidMount() {
     Particles.init({
       selector: '.background',
-      connectParticles: false
+      connectParticles: true,
+      color: '#ffffff',
+      sizeVariations: 5,
+      maxParticles: 80
     })
 
     const self = this
@@ -75,18 +76,7 @@ export default class Home extends React.Component {
   render() {
     return (
       <Section>
-        <div className={css.imgContainer} />
-        <Background />
-        <FollowMouse
-          sensitivity={0.009}
-          defaults={{ x: -2.62, y: -4.91 }}
-          inline={
-            !this.state.timer
-              ? { filter: `blur(0px)` }
-              : { filter: `blur(5px)` }
-          }>
-          <img className={css.profileImg} src={tyler} />
-        </FollowMouse>
+        <canvas className="background" />
         <div
           className={css.contentContainer}
           ref={el => (this.containerRef = el)}>
