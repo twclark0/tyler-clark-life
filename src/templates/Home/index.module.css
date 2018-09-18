@@ -67,6 +67,11 @@ body {
   font-size: 20px !important;
   transition: font-size 1s;
 }
+
+.bubble--youtube span {
+  font-size: 16px !important;
+  transition: font-size 1s;
+}
 .bubble {
   border-radius: 50%;
   display: flex;
@@ -79,8 +84,8 @@ body {
   margin: 0;
 }
 .bubble--talks {
-  height: 80px !important;
-  width: 80px !important;
+  height: 85px !important;
+  width: 85px !important;
   background: #d9b310;
   transform: translate(-127.3px, -37.8px);
   cursor: pointer;
@@ -96,8 +101,8 @@ body {
 }
 .bubble--youtube {
   background: #e8590c;
-  height: 60px !important;
-  width: 60px !important;
+  height: 70px !important;
+  width: 70px !important;
   transform: translate(-92.7px, 56.5px);
   cursor: pointer;
   text-decoration: none;
@@ -119,8 +124,8 @@ body {
   text-decoration: none;
 }
 .bubble--experiance {
-  height: 125px !important;
-  width: 125px !important;
+  height: 130px !important;
+  width: 130px !important;
   background: #0b3c5d;
   transform: translate(-8.3px, -13px);
   cursor: pointer;

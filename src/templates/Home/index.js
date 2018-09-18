@@ -46,7 +46,7 @@ export default class Home extends React.Component {
 
     const self = this
     function* myGen() {
-      yield* [...Object.keys(self.state.bubbles)]
+      yield* Object.keys(self.state.bubbles)
       yield false
     }
 
@@ -103,13 +103,17 @@ export default class Home extends React.Component {
               </div>
             </FollowMouse>
             <FollowMouse
-              transX={this.state.bubbles.youtube === 'hidden' ? 0 : -85}
+              transX={this.state.bubbles.youtube === 'hidden' ? 0 : -115}
               transY={this.state.bubbles.youtube === 'hidden' ? 0 : 60}
               inline={this.composeTransition()}
               sensitivity={0.008}>
-              <div className={this.composeClasses('youtube')}>
+              <a
+                href="https://www.youtube.com/playlist?list=PLAdIRk90T3WiSheqcofJYxMM9uJvfDVQ5"
+                target="_blank"
+                className={this.composeClasses('youtube')}>
+                <span style={{ fontSize: '0px' }}>Talks</span>
                 <i style={{ fontSize: '0px' }} className="fab fa-youtube" />
-              </div>
+              </a>
             </FollowMouse>
             <FollowMouse
               transX={this.state.bubbles.talks === 'hidden' ? 0 : -120}
@@ -153,8 +157,8 @@ export default class Home extends React.Component {
               </div>
             </FollowMouse>
             <FollowMouse
-              transX={this.state.bubbles.twitter === 'hidden' ? 0 : 100}
-              transY={this.state.bubbles.twitter === 'hidden' ? 0 : 0}
+              transX={this.state.bubbles.twitter === 'hidden' ? 0 : 110}
+              transY={this.state.bubbles.twitter === 'hidden' ? 0 : 13}
               inline={this.composeTransition()}
               sensitivity={0.011}>
               <a
