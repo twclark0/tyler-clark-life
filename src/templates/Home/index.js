@@ -3,7 +3,7 @@ import FollowMouse from './components/FollowMouse'
 import css from './index.module.css'
 import 'regenerator-runtime/runtime'
 import Section from './components/Section'
-
+import Resume from './resume.pdf'
 export default class Home extends React.Component {
   state = {
     bubbles: {
@@ -148,13 +148,16 @@ export default class Home extends React.Component {
               transY={this.state.bubbles.resume === 'hidden' ? 0 : 110}
               inline={this.composeTransition()}
               sensitivity={0.009}>
-              <div className={this.composeClasses('resume')}>
+              <a
+                className={this.composeClasses('resume')}
+                href={Resume}
+                target="_blank">
                 <p
                   style={{ fontSize: '0px' }}
                   className={this.composeFontSize('resume')}>
                   Resume
                 </p>
-              </div>
+              </a>
             </FollowMouse>
             <FollowMouse
               transX={this.state.bubbles.twitter === 'hidden' ? 0 : 110}
