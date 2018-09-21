@@ -4,6 +4,8 @@ import css from './index.module.css'
 import 'regenerator-runtime/runtime'
 import Section from './components/Section'
 import Resume from './resume.pdf'
+import egghead from './egghead.png'
+
 export default class Home extends React.Component {
   state = {
     bubbles: {
@@ -127,7 +129,12 @@ export default class Home extends React.Component {
                 <p
                   style={{ fontSize: '0px' }}
                   className={this.composeFontSize('talks')}>
-                  Courses
+                  <span style={{ fontSize: '0px' }}>Courses</span>
+                  <img
+                    style={{ height: 0 }}
+                    className={css.egghead}
+                    src={egghead}
+                  />
                 </p>
               </a>
             </FollowMouse>

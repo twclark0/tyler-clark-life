@@ -72,6 +72,14 @@ body {
   font-size: 16px !important;
   transition: font-size 1s;
 }
+.bubble--talks span {
+  font-size: 16px !important;
+}
+.bubble--talks img {
+  height: 25px !important;
+  margin: auto;
+  transition: height 1s;
+}
 .bubble {
   border-radius: 50%;
   display: flex;
@@ -90,6 +98,7 @@ body {
   transform: translate(-127.3px, -37.8px);
   cursor: pointer;
   text-decoration: none;
+  text-align: center;
 }
 .bubble--twitter {
   height: 60px !important;
@@ -146,9 +155,11 @@ body {
   width: 500px;
   align-items: center;
 }
-
 .hide {
   width: 0;
   height: 0;
   top: 0;
+}
+img {
+  display: block;
 }
