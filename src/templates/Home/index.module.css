@@ -63,22 +63,12 @@ body {
   font-size: 20px !important;
   transition: font-size 1s;
 }
-.bubble--youtube i {
-  font-size: 20px !important;
-  transition: font-size 1s;
-}
-
 .bubble--youtube span {
   font-size: 16px !important;
   transition: font-size 1s;
 }
 .bubble--talks span {
   font-size: 16px !important;
-}
-.bubble--talks img {
-  height: 25px !important;
-  margin: auto;
-  transition: height 1s;
 }
 .bubble {
   border-radius: 50%;

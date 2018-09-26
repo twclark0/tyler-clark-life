@@ -114,7 +114,6 @@ export default class Home extends React.Component {
                 target="_blank"
                 className={this.composeClasses('youtube')}>
                 <span style={{ fontSize: '0px' }}>Talks</span>
-                <i style={{ fontSize: '0px' }} className="fab fa-youtube" />
               </a>
             </FollowMouse>
             <FollowMouse
@@ -130,11 +129,6 @@ export default class Home extends React.Component {
                   style={{ fontSize: '0px' }}
                   className={this.composeFontSize('talks')}>
                   <span style={{ fontSize: '0px' }}>Courses</span>
-                  <img
-                    style={{ height: 0 }}
-                    className={css.egghead}
-                    src={egghead}
-                  />
                 </p>
               </a>
             </FollowMouse>
