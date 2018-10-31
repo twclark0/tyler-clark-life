@@ -96,13 +96,16 @@ export default class Home extends React.Component {
               transY={this.state.bubbles.experiance === 'hidden' ? 0 : -10}
               inline={this.composeTransition()}
               sensitivity={0.009}>
-              <div className={this.composeClasses('experiance')}>
+              <a
+                className={this.composeClasses('experiance')}
+                href={Resume}
+                target="_blank">
                 <p
                   style={{ fontSize: '0px' }}
                   className={this.composeFontSize('experiance')}>
                   Experiance
                 </p>
-              </div>
+              </a>
             </FollowMouse>
             <FollowMouse
               transX={this.state.bubbles.youtube === 'hidden' ? 0 : -115}
