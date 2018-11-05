@@ -69,6 +69,7 @@ body {
 }
 .bubble--talks span {
   font-size: 16px !important;
+  transition: font-size 1s;
 }
 .bubble {
   border-radius: 50%;
