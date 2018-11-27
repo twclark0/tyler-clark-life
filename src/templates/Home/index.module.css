@@ -15,12 +15,14 @@ body {
   letter-spacing: 1px;
   will-change: transform;
   transition: transform 0.1s linear;
+  color: hsl(0, 0%, 83%);
 }
 .profile h3 {
   margin: 0;
   will-change: transform;
   transition: transform 0.1s linear;
   padding: 0 0 0 9px;
+  color: hsl(0, 0%, 83%);
 }
 .profileImg {
   position: absolute;
@@ -43,7 +45,7 @@ body {
 .bubble--p {
   margin: 0;
   transition: font-size 0.6s ease-in-out;
-  color: #fff;
+  color: #ffffff;
 }
 
 .bubble--experiance .bubble--p {
@@ -153,4 +155,10 @@ body {
 }
 img {
   display: block;
+}
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: hsla(0, 0%, 0%, 0.4);
 }

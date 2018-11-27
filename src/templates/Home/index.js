@@ -38,14 +38,6 @@ export default class Home extends React.Component {
   }
 
   componentDidMount() {
-    Particles.init({
-      selector: '.background',
-      connectParticles: true,
-      color: '#ffffff',
-      sizeVariations: 5,
-      maxParticles: 80
-    })
-
     const self = this
     function* myGen() {
       yield* Object.keys(self.state.bubbles)
@@ -78,7 +70,7 @@ export default class Home extends React.Component {
   render() {
     return (
       <Section>
-        <canvas className="background" />
+        <div className={css.overlay} />
         <div
           className={css.contentContainer}
           ref={el => (this.containerRef = el)}>
