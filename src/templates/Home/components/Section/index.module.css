@@ -8,3 +8,10 @@
   background: url('./talk.jpg');
   background-size: cover;
 }
+@media (max-width: 600px) {
+  .container {
+    min-height: 100vh;
+    height: inherit;
+    padding: 15px 0;
+  }
+}

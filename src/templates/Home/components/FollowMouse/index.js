@@ -3,7 +3,18 @@ import { MouseContext } from '../Section'
 
 export default class FollowMouse extends React.Component {
   state = {
-    translate: false
+    translate: false,
+    mobile: false
+  }
+  updateWindowDimensions = () => {
+      this.setState({mobile: window.innerWidth > 600 ? false : true})
+  }
+  componentDidMount() {
+    this.updateWindowDimensions()
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
   }
   translateMouse = ({ x, y }) => {
     if (this.dom) {
@@ -40,7 +51,7 @@ export default class FollowMouse extends React.Component {
             ref: dom => {
               this.dom = dom
             },
-            style: { ...this.translateMouse(context), ...otherInlineStyles },
+            style: this.state.mobile ? {} : { ...this.translateMouse(context), ...otherInlineStyles },
             onMouseDown: this.handleMouseDown,
             onClick: this.handleMouseUp
           })

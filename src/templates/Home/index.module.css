@@ -88,7 +88,6 @@ body {
   height: 85px !important;
   width: 85px !important;
   background: #d9b310;
-  transform: translate(-127.3px, -37.8px);
   cursor: pointer;
   text-decoration: none;
   text-align: center;
@@ -97,7 +96,6 @@ body {
   height: 60px !important;
   width: 60px !important;
   background: #48aae6;
-  transform: translate(90.7px, -3.12px);
   cursor: pointer;
   text-decoration: none;
 }
@@ -105,7 +103,6 @@ body {
   background: #e8590c;
   height: 70px !important;
   width: 70px !important;
-  transform: translate(-92.7px, 56.5px);
   cursor: pointer;
   text-decoration: none;
 }
@@ -113,7 +110,6 @@ body {
   height: 60px !important;
   width: 60px !important;
   background: #0077b5;
-  transform: translate(-58px, 116px);
   cursor: pointer;
   text-decoration: none;
 }
@@ -121,7 +117,6 @@ body {
   height: 100px !important;
   width: 100px !important;
   background: #f4c3a2;
-  transform: translate(61px, 106px);
   cursor: pointer;
   text-decoration: none;
 }
@@ -129,7 +124,6 @@ body {
   height: 130px !important;
   width: 130px !important;
   background: #0b3c5d;
-  transform: translate(-8.3px, -13px);
   cursor: pointer;
   text-decoration: none;
 }
@@ -161,4 +155,19 @@ img {
   height: 100%;
   width: 100%;
   background: hsla(0, 0%, 0%, 0.4);
+}
+
+@media (max-width: 600px) {
+  .bubble {
+    position: relative;
+    margin: 15px 0;
+  }
+  .contentContainer {
+    width: 100%;
+  }
+  .bubblesContainer {
+    height: inherit;
+    width: 100%;
+    flex-direction: column;
+  }
 }
