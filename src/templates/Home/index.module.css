@@ -48,7 +48,7 @@ body {
   color: #ffffff;
 }
 
-.bubble--experiance .bubble--p {
+.bubble--experience .bubble--p {
   font-size: 16px !important;
 }
 .bubble--talks .bubble--p {
@@ -120,7 +120,7 @@ body {
   cursor: pointer;
   text-decoration: none;
 }
-.bubble--experiance {
+.bubble--experience {
   height: 130px !important;
   width: 130px !important;
   background: #0b3c5d;

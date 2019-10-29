@@ -9,7 +9,7 @@ import egghead from './egghead.png'
 export default class Home extends React.Component {
   state = {
     bubbles: {
-      experiance: 'hidden',
+      experience: 'hidden',
       twitter: 'hidden',
       linkedIn: 'hidden',
       resume: 'hidden',
@@ -85,17 +85,17 @@ export default class Home extends React.Component {
           <div className={css.bubblesContainer}>
             <FollowMouse
               transX={0}
-              transY={this.state.bubbles.experiance === 'hidden' ? 0 : -10}
+              transY={this.state.bubbles.experience === 'hidden' ? 0 : -10}
               inline={this.composeTransition()}
               sensitivity={0.009}>
               <a
-                className={this.composeClasses('experiance')}
+                className={this.composeClasses('experience')}
                 href={Resume}
                 target="_blank">
                 <p
                   style={{ fontSize: '0px' }}
-                  className={this.composeFontSize('experiance')}>
-                  Experiance
+                  className={this.composeFontSize('experience')}>
+                  experience
                 </p>
               </a>
             </FollowMouse>
