@@ -79,7 +79,7 @@ export default class Home extends React.Component {
               <h1>Tyler Clark</h1>
             </FollowMouse>
             <FollowMouse sensitivity={0.007} defaults={{ x: -7.34, y: -2.9 }}>
-              <h3>Fullstack Developer</h3>
+              <h3>Senior Fullstack Developer</h3>
             </FollowMouse>
           </div>
           <div className={css.bubblesContainer}>
